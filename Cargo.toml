@@ -1,0 +1,14 @@
+[package]
+name = "apier"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[dependencies]
+async-nats = "0.45.0"
+dotenvy = "0.15"
+tokio = { version = "1.0", features = ["full"] }
+futures-util = "0.3.31"
